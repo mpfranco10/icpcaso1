@@ -23,6 +23,15 @@ public class Novasoft {
 			System.out.println("Servidores " + prop.getProperty("numServ"));
 			System.out.println("Tam buffer " + prop.getProperty("bufftam"));
 
+			int clientes = Integer.parseInt(prop.getProperty("numClientes"));
+			int serv = Integer.parseInt(prop.getProperty("numServ"));
+			int buff = Integer.parseInt(prop.getProperty("bufftam"));
+
+			int[] mensajesClientes = new int[clientes];
+			for (int i = 0; i < clientes; i++) {
+				mensajesClientes[i] = Integer.parseInt(prop.getProperty("numMensajescliente" + i));
+			}
+
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		} finally {
@@ -39,4 +48,3 @@ public class Novasoft {
 		// Luego si inician threads
 	}
 }
-
