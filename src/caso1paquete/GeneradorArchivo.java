@@ -12,9 +12,9 @@ public class GeneradorArchivo {
 		OutputStream output = null;
 
 		Random rand = new Random();
-		int numclientes = rand.nextInt(60) + 10; // Entre 10 y 60 clientes
-		int numServ = rand.nextInt(10) + 3; // Entre 3 y 10 servidores
-		int bufftam = rand.nextInt(50) + 30; // Entre 30 y 50 tamaño del buffer
+		int numclientes = rand.nextInt(10) + 3; // Entre 10 y 60 clientes
+		int numServ = rand.nextInt(3) + 1; // Entre 3 y 10 servidores
+		int bufftam = rand.nextInt(20) + 30; // Entre 30 y 50 tamaño del buffer
 
 		try {
 
